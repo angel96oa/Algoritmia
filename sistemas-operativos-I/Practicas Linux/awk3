@@ -1,0 +1,4 @@
+
+awk -F: -v par=$1 \
+'BEGIN{param=$par} \
+{if(length($1)>param) printf "Campo: %s, Longitud: %d\n",$1,length($1)}' /etc/passwd

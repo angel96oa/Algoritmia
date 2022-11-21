@@ -1,0 +1,18 @@
+if [ $# -ne 2 ]
+then
+	echo "Numero de parametros incorrecto"
+	exit
+fi
+
+t1='ls -l $1 | awk '{print $5}''
+t2='ls -l $2 | awk '{print $5}''
+
+if [ -f $1 -a -f $2 ]
+then
+	if [ $t1 -lt $t2 ]
+	then echo "$2 es mayor que $1"
+	else echo "$1 es mayor que $2"
+	fi
+else
+echo "Al menos un fichero pasado por parametro no existe"
+fi

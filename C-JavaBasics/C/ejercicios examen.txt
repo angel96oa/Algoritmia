@@ -1,0 +1,79 @@
+1. Como entrada de datos (es decir, los pedimos, los ponemos, o los pasamos por parametros)
+ Total de kilometros recorridos, coste total del viaje, precio por litro de gasolina y tiempo
+ empleado (horas y minutos). Obtener, POR FUNCIONES:
+
+A) Coste del vehiculo "cada 100 km" tanto
+ de gasolina gastada como de dinero empleado
+B) Velocidad Media
+
+
+
+2. Dado dos numeros, obtener todoslos numeros perfectos que hay en ese rango, SIN FUNCIONES.
+
+
+
+3. Dados los tres lados de un triangulo, decir si el triangulo es equilatero, isosceles o escaleno.
+
+
+
+4. Escribir un programa que calcule 
+la raiz cuadrada de un numero siguiente
+ el siguiente algoritmo:
+
+Siendo
+ 'n' nuestro numero, si 'X' es una 
+aproximacion a la raiz cuadrada de 
+'n', entonces ((n/X) + X) / 2 es una
+ mejor aproximacion.
+
+
+
+5. Obtener el maximo, el minimo, la media 
+aritmetica y el numero de valores negativos
+ introducidos de una
+ secuencia de numeros pedida por teclado al
+ usuario. La secuencia parara cuando se 
+introduzca un cero, 
+SIN CONTAR ESTE para ninguno de los calculos
+ (maximo, minimo, etc...). Tened en cuenta
+ que la primera
+ vez podria ser un cero. Eso tendreis que 
+controlarlo de alguna manera
+
+
+
+6. Obtener los tres coeficientes 
+correspondientes a una ecuacion de
+ segundo grado, y mostrar por 
+pantalla sus soluciones, ya sean
+ normales o complejas. Tambien hay 
+que contemplar el caso de que 
+el primer termino sea 0, con lo que 
+no tendriamos una ecuacion de segundo
+ grado, sino una de primer
+ grado, que tambien tendriamos que 
+mostrar su solucion.
+
+
+
+7. Hacer una funcion que nos diga si 
+un numero es primo. Utilizando esta 
+funcion, hacer otra que 
+nos factorice el mismo numero que
+ hemos comprobado si era o no primo.
+
+
+(Factorizar:
+
+18|  2
+9  |  3
+3 |  3
+1
+)
+
+
+
+8. Introducir numeros por teclado mientras
+ no se meta un cero. Sumar todos aquellos
+ tal que la suma de sus cifras sea igual
+ al numero de cifras que tienen

@@ -1,0 +1,6 @@
+if [ $# -ne 1 ]
+then echo "Numero de parametros incorrecto"
+exit;
+fi
+
+ls -l $1 | awk '/^l/{print $9 "Es un fichero simbólico"}'

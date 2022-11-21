@@ -1,0 +1,5 @@
+
+awk -v linea=$1 -v campo=$2 \
+'BEGIN{l=linea; c=campo} \
+NR==l{print $c} \
+END {printf "Se ha imprimido el campo %d de la linea %d\n",c,l}' holi

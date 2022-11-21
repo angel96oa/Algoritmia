@@ -1,0 +1,31 @@
+VISIBILIDAD
+private 
+friendly(paquete)
+protected
+public
+
+CASTING
+                 <--   down
+Universitario --> alumno --> Persona
+                 -->   up
+
+SOBRECARGA
+- Mismo nombre
+- Distintos parametros
+
+
+ Clase  |  VISIBILIDAD |    DEV    |   NOMBRE    |   PARAMETRO         |   ¿SÍ O NO?
+                                                                       |
+Clase   |                                                              |
+Alumno  |                  Alumno     trabajaCon    (Alumno a){...}    |  
+------------------------------------------------------------------------ 
+        |               Alumno     trabajaEn     (Alumno a){...}       |  Método nuevo, ni sobreescritura ni sobrecargar
+        |                  "       trabajaCon    (Persona p){...}      |  Sobrecarga - los parametros son distintos  - Sí
+        |                  "          "          (Universitario o){...}|  Sobrecarga - los parametros son distintos  - Sí
+clase   |                  "          "          (Alumno a){...}       |  Sobreescritura - Sí 
+        |  private         "          "          (   "   "){...}       |        "        - No - porque limitas la visibilidad con el private
+univer- |  public          "          "          (   "   "){...}       |        "        - Sí
+sitario |              Persona        "          (   "   "){...}       |        "        - No
+        |           Universitario     "          (   "   "){...}       |        "        - Sí
+
+Cuando cambian los parametros es sobrecarga.

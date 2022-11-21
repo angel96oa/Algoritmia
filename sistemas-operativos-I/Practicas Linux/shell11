@@ -1,0 +1,7 @@
+fecha=`date +%d%m%Y`;
+
+if [ -f $1 ]
+then
+	cp $1 $1.$fecha; 
+else echo "No existe el fichero"; exit
+fi

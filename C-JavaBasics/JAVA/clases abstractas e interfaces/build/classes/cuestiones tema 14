@@ -1,0 +1,50 @@
+cuestion 10
+-----------
+No. Una interfaz es ella sola.
+
+
+cuestion 11
+-----------
+No.
+
+
+cuestion 17
+-----------
+En herencia, durante la instanciacion de un objeto se hacen llamadas a los contructores de las correspondientes super clases
+
+
+cuestión 21
+-----------
+Porque java solo puede clonar objetos de tipo cloneable, si solo tiene el metodo y no el extends cloneable, no sirve. Es un fltro
+
+
+cuestión 22
+-----------
+tienes public boolean equals(Object o), y una clase A lo herereda. ¿Como es sobreescritura y cuando sbrecarga?
+
+public boolean equals(A a) -> sobrecarga, cambian los parametros
+public boolean equals(object o) -> sobreescritura, escribes lo mismo en una clase distinta que hereda de la de arriba
+
+A x = new A();
+
+x.equal(y) -> y instanceof A produce sobrecarga
+
+
+cuestion 23
+-----------
+Hay que hacer un casting para decir que es de tipo B, es decir
+
+B b2 = (B) b1.clone();
+
+
+cuestion 26
+-----------
+Para que la instancia pase a ser del tipo de la interfaz
+
+
+cuestion 27
+-----------
+en jugador clonar te da un jugador, y clone una copia de la instacia
+Mientras que cuando portero hereda de jugador, clonar devuelve jugador,
+mientras que clone, como su definicion indica, devuelve una copia de la instacia, 
+es decir, un portero

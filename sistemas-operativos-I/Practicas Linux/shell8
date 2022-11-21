@@ -1,0 +1,22 @@
+
+dir='.'
+cont1=0;
+cont2=0;
+
+for VAR in $dir/*.c 
+do
+	if [ $cont1 -ne 1 ]
+	then mkdir prog_c ; chmod 777 prog_c
+	fi
+cont1=1;
+mv $VAR prog_c
+done
+
+for VAR in $dir/*.txt 
+do
+	if [ $cont2 -ne 1 ]
+	then mkdir textos ; chmod 777 textos
+	fi
+cont2=1;
+mv $VAR textos
+done

@@ -1,0 +1,8 @@
+
+awk 'BEGIN{conta=0;conte=0;conti=0;conto=0;contu=0} \
+/^A/ || /^a/{conta++;} \ 
+/^E/ || /^e/{conte++;} \ 
+/^I/ || /^i/{conti++;} \ 
+/^O/ || /^o/{conto++;} \ 
+/^U/ || /^u/{contu++;} \ 
+END{printf "Contador Aa: %d\nContador Ee: %d\nContador Ii: %d\nContador Oo: %d\nContador Uu: %d\nContador no vocales: %d\n", conta,conte,conti,conto,contu,NR-(conta+conte+conti+conto+contu)}' /home/luis/ejemplo

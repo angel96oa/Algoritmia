@@ -1,0 +1,19 @@
+#PARA BORRAR UN DIRECTORIO POR PARAMETRO
+if [ $# -ne 1 ]
+then
+echo "Numero de parametros incorrecto"; exit
+else if [ -d $1 ]
+	then echo "Directorio correcto"
+	else echo "No es un directorio"; exit
+	fi  
+fi
+
+while true
+do
+echo "¿Quieres borrar el directorio?"
+read respuesta;
+	case $respuesta in
+	[sS]*) rmdir $1;;
+	[nN]*) echo "No borro $dir";;
+	esac
+done

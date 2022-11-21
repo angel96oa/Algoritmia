@@ -1,0 +1,14 @@
+
+if [ $# -ne 1 ]
+then echo "Tiene que haber un solo parametro"
+exit
+fi
+
+
+
+grep [$1] /home/luis/ejemplo | awk -v letra=$1 'BEGIN{l=letra;cont=0} \
+		{cont++;
+		printf NR "- Línea: %s, Posición de comienzo: %d\n",$0,index($0,l)} \
+		END{if(cont==0){printf "No existen lineas que contengan la letra %s\n",l ; exit}
+		printf "Hay %d lineas que incluyen la letra %s \n",cont,l}'
+

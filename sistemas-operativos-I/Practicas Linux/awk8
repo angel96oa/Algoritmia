@@ -1,0 +1,5 @@
+awk -v cont=0 -v vacias=0 \
+'BEGIN{c1=cont;c2=vacias} \
+{c1++; \
+if(NF!=0)print c1 " " $0
+else {c2++; print c2 " " $0}}' /home/luis/fich

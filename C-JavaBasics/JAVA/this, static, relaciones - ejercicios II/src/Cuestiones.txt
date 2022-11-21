@@ -1,0 +1,50 @@
+Cuestion 1
+----------
+
+a) == es false, equal es true
+b) String z = x;
+
+Cuestion 2
+----------
+
+// dentro de una clase
+
+public void aumentar (Casa[] v, int n){
+
+    Casa[] aux = new Casa[v.length + n];
+
+    for (int i = 0 ; i < v.length ; i++){
+
+        aux[i] = v[i];
+
+    } 
+
+    v = aux;
+
+}
+
+
+
+Cuestion 3
+----------
+
+// En la clase principal
+
+public static void aumentar (Casa[] v, int n){
+
+    Casa[] aux = new Casa[v.length + n];
+
+    for (int i = 0 ; i < v.length ; i++){
+
+        aux[i] = v[i];
+
+    } 
+
+    v = aux;
+
+}
+
+Cuestion 4
+----------
+
+igual que la 1

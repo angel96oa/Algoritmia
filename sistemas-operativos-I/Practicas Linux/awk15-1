@@ -1,0 +1,5 @@
+
+echo "Inserta un número" ; read var1
+echo "Inserta otro número" ; read var2
+
+./awk15-2 $var1 $var2

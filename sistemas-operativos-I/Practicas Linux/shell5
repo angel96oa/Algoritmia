@@ -1,0 +1,13 @@
+if [ $# -lt 2 ]
+then
+echo "Deben haber al menos dos parametros" 
+exit
+fi
+
+num=0;
+
+for i in *
+do
+	echo $num $i
+	num='expr $num + 1'
+done

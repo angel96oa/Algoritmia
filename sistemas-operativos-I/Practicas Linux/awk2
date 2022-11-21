@@ -1,0 +1,2 @@
+
+awk -F: '/^r/{if($5!="")printf "Usuario: %s Nombre: %s \n",$1,$5}' /etc/passwd

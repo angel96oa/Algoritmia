@@ -1,0 +1,7 @@
+
+who | awk -v nom=$1 \
+'BEGIN{n=nom} \
+{if (n==$1)print "El usuario "$1 " se conectó a las " $4 
+else print "El usuario " n " no está trabajando "}'
+
+

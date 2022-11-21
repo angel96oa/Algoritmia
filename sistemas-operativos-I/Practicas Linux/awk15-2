@@ -1,0 +1,23 @@
+
+
+echo "Introduce 1 si quieres sumar los números"
+echo "Introduce 2 si quieres restar los números"
+echo "Introduce 3 si quieres saber cuál es mayor"
+echo "Introduce 4 si quieres salir del sistema"
+
+read respuesta
+
+if [ $respuesta -lt 1 -o $respuesta -gt 4 ]
+then echo "El número debe estar entre 1 y 4" ; exit
+fi
+
+case $respuesta in
+ [1]*) suma=`expr $1 + $2`;echo "La suma es : "$suma;;
+ [2]*) resta=`expr $1 - $2`;echo "La resta es :"$resta;;
+ [3]*) if [ $1 -ge $2 ] 
+	then echo "El entero $1 es mayor que $2" 
+	else echo "El entero $2 es mayor que $1"
+       fi;;
+ [4]*) echo "Gracias por su visita" ; exit;;
+esac
+

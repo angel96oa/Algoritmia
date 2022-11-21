@@ -1,0 +1,13 @@
+if [ $# -lt 2 ]
+then
+echo "Deben haber al menos dos parametros" 
+exit
+fi
+
+num=$#;
+
+for ((i=1;i<=num;i++))
+do 
+echo $1
+shift
+done

@@ -1,0 +1,23 @@
+if [ $# -ne 1 ]
+then echo "No se le ha pasado un unico parametro"
+exit
+fi
+
+
+if ls -l $1 >/dev/null 2>/dev/null
+then echo "Existe en el directorio actual"
+else echo "No existe en el directorio actual"
+fi
+
+if [ -f $1 ]
+then if [ -s $1 ]
+	then echo "El fichero es regular y no esta vacio"
+	else echo "El fichero es regular y esta vacio"
+     fi
+else echo "El fichero no es regular"
+fi
+
+if [ -d $1 ]
+then ls -l $1
+fi
+

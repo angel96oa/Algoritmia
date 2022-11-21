@@ -1,0 +1,11 @@
+
+while [ -z $cadena ] # si la cadena esta vacia
+do
+echo "Introduce una cadena"
+read $1
+done
+
+echo $cadena
+
+
+

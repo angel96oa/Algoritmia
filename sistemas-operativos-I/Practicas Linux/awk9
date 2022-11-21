@@ -1,0 +1,32 @@
+if [ $# -ne 2 ]
+then echo "Numero de parametros incorrecto";
+exit;
+fi
+
+if [ -f $1 ]
+then echo "Existe el fichero";
+else echo "No existe el fichero" ; exit
+fi
+
+if [ $2 -ge 1 -a $2 -le 3 ]
+then echo "Opción correcta"
+else echo "El número debe de estar entre 1 y 3" ; exit
+fi
+
+case $2 in
+	[1]*) awk -v cont=0 \
+		'BEGIN{c=cont} \
+		{c++ ; print c " " $0}' /home/luis/fich;;
+
+	[2]*) awk -v cont=0 \
+		'BEGIN{c=cont} \
+		{c++; \
+		if(NF!=0)print c " " $0}' /home/luis/fich;;
+
+	[3]*) awk -v cont=0 -v vacias=0 \
+		'BEGIN{c1=cont;c2=vacias} \
+		{c1++; \
+		if(NF!=0)print c1 " " $0
+		else {c2++; print c2 " " $0}}
+		END{print "Lineas vacias " c2 " lineas no vacias " c1-c2 }' /home/luis/fich
+esac

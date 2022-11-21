@@ -1,0 +1,4 @@
+if [ -f $1 ] # Para leer un fichero y que escriba en el siempre despues de cada linea
+then
+cat >>$1
+fi

@@ -1,0 +1,2 @@
+
+ls -l | awk '{if($6=="jun")print $0}'

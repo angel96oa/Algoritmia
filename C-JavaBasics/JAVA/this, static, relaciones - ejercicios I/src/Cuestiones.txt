@@ -1,0 +1,63 @@
+Cuestion 2
+----------
+a) 0, 2000
+b) 2000, 2000 porque el atributo es estático y al cambiarlo en el main, cambia para todos.
+
+
+Cuestión 3
+----------
+Null, porque no hay new Libro.
+
+Cuestión 5
+----------
+a)
+Animal
+
+String nombre;
+int edad;
+
+public Animal(String n){
+nombre = n;
+}
+
+public Animal(String n, int edad){
+this(n);
+this.edad;
+}
+
+b) no, porque al crear otros constructores, el constructor vacío se elimina.
+
+Cuestión 6
+----------
+
+Da error, porque el segundo perro es igual a NULL.
+
+Cuestión 7
+----------
+Sólo a uno.
+
+Cuestión 8
+----------
+No es posible llamar a los constructores en un método porque los constructores solo existen cuando se está creando el objeto.
+Tampoco en un método estático.
+
+Cuestión 9
+----------
+
+public class Operar{
+
+    public static int doble (int a){
+        return a*2;
+    }
+    
+    public static int mitad (int a){
+        return a/2;
+    }
+
+}
+
+
+
+
+
+
